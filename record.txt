@@ -1,0 +1,44 @@
+新项目
+1.划分目录结构
+[
+  asset 资源  - [
+    img,
+    css
+  ],
+  components 公共组件 - [
+    common , 完全通用组件 适用多个项目
+    content 和当前项目业务相关的公共组件
+  ],
+  views 大的视图 - [
+    homes,
+    cates
+  ],
+  router - 路由,
+  store - vuex 公共变量,
+  network - 网路请求 ,
+  common - 公共js文件 多个地方可以使用 
+]
+  
+2.css文件的引入
+  2.1 在assets-css 中新建normalize.css 用来规范css的标准
+    代码 https://github.com/necolas/normalize.css/blob/master/normalize.css
+  2.2 在assets-css 中新建base.css 用来初始化css样式 
+    在App.vue引用base.css
+  
+3.配置文件路径别名 
+  vue-cli3 
+  1.创建vue.config.js
+  2.配置 alias
+
+4.配置 .editorconfig
+保证团队开发风格一致
+
+5.项目模块划分
+通过tabbar把项目分为 首页 分类 购物车 我的 四个模块
+并路由映射
+
+6.头部导航栏组件封装
+
+7.网路请求封装
+ 1.封装首页数据请求
+
